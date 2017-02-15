@@ -1,0 +1,21 @@
+<?xml version="1.0">
+<Map Version="1.0">
+    <Floors>
+        <Floor Number="1">
+            <Walls>
+                <Wall StartAt="20.0, 40.0" EndAt="20.0, 50.0" />
+                <Wall StartAt="20.0, 50.0" EndAt="40.0, 50.0" />
+                <Wall StartAt="40.0, 50.0" EndAt="40.0, 40.0" />
+                <Wall StartAt="40.0, 40.0" EndAt="20.0, 40.0" />
+                <!-- More walls here -->
+            </Walls>
+            <Nodes>
+                <Node At="100.0, 20.0" />
+                <Node At="70.0, 30.0" />
+                <Node At="50.0, 60.0" />
+                <!-- More nodes here -->
+            </Nodes>
+        </Floor>
+        <!-- More floors here -->
+    </Floors>
+</Map>
