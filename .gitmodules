@@ -1,0 +1,6 @@
+[submodule "src/MapEditor"]
+	path = src/MapEditor
+	url = https://github.com/yhvicey/IndoorNavigation.MapEditor.git
+[submodule "src/Navigator"]
+	path = src/Navigator
+	url = https://github.com/yhvicey/IndoorNavigation.Navigator.git
