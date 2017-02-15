@@ -27,15 +27,17 @@ a .map file is a xml file with a specified format.
 # Element defines
 ## Map
 Main element that contains other elements such as map properties and floors.
+
 |Attribute|Description|
-|-|-|
+|---|---|
 |Version|Specified .map file's version.|
 ## Floors
 Contains floor elements.
 ## Floor
 Floor element. Representing a floor, and contains wall elements and node elements.
+
 |Attribute|Description|
-|-|-|
+|---|---|
 |Number|Number of the floor. Start from 1.|
 ||One number should only appear once in a file.|
 ||If not, the parsing will be broken.|
@@ -43,12 +45,14 @@ Floor element. Representing a floor, and contains wall elements and node element
 Contains wall elements.
 ## Wall
 Wall element. Representing a wall.
+
 |Attribute|Description|
-|-|-|
+|---|---|
 |StartAt|Start point of the wall.|
 |EndAt|End point of the wall.|
 ## Nodes
 Contains node elements.
+
 |Attribute|Description|
-|-|-|
+|---|---|
 |At|Position of the node.|
