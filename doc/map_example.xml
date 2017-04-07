@@ -24,9 +24,9 @@
         <!-- More wall nodes here -->
     </Floor>
     <Floor>
-        <Entry X="0.0" Y="10.0" Prev="0">
+        <EntryNode X="0.0" Y="10.0" Prev="0">
             <Link Type="GuideNode" Index="0" />
-        </Entry>
+        </EntryNode>
         <GuideNode X="100.0" Y="20.0">
             <Link Type="GuideNode" Index="1" />
         </GuideNode>
