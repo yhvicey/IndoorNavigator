@@ -67,7 +67,7 @@ a map file is a xml file with a specified format.
 Root element that contains floor elements.
 |Attribute|Description|
 |-|-|
-|Version|Specified .map file's version.|
+|Version|Specified map file's version.|
 |Name|Map's name.|
 ## Floor
 Floor element. Representing a floor, and contains node elements.
