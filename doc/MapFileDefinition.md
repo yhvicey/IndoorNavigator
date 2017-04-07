@@ -5,59 +5,47 @@ a map file is a xml file with a specified format.
 <?xml version="1.0" encoding="utf-8"?>
 <Map Version="1.0" Name="物联网学院B区">
     <Floor>
-        <EntryNodes>
-            <EntryNode X="0.0" Y="10.0" Next="0">
-                <Link Type="Guide" Index="0" />
-            </EntryNode>
-            <!-- More entry nodes here -->
-        </EntryNodes>
-        <GuideNodes>
-            <GuideNode X="100.0" Y="20.0">
-                <Link Type="Guide" Index="1" />
-            </GuideNode>
-            <GuideNode X="70.0" Y="30.0">
-                <Link Type="Guide" Index="2" />
-            </GuideNode>
-            <GuideNode X="50.0" Y="60.0">
-                <Link Type="Entry" Index="0" />
-            </GuideNode>
-            <GuideNode X="50.0" Y="43.0" />
-            <GuideNode X="45.0" Y="32.0" Name="b141" />
-            <!-- More guide nodes here -->
-        </GuideNodes>
-        <WallNodes>
-            <WallNode X="20.0" Y="40.0" />
-            <WallNode X="20.0" Y="50.0" />
-            <WallNode X="40.0" Y="50.0" />
-            <WallNode X="40.0" Y="40.0" />
-            <!-- More wall nodes here -->
-        </WallNodes>
+        <EntryNode X="0.0" Y="10.0" Next="0">
+            <Link Type="Guide" Index="0" />
+        </EntryNode>
+        <!-- More entry nodes here -->
+        <GuideNode X="100.0" Y="20.0">
+            <Link Type="Guide" Index="1" />
+        </GuideNode>
+        <GuideNode X="70.0" Y="30.0">
+            <Link Type="Guide" Index="2" />
+        </GuideNode>
+        <GuideNode X="50.0" Y="60.0">
+            <Link Type="Entry" Index="0" />
+        </GuideNode>
+        <GuideNode X="50.0" Y="43.0" />
+        <GuideNode X="45.0" Y="32.0" Name="b141" />
+        <!-- More guide nodes here -->
+        <WallNode X="20.0" Y="40.0" />
+        <WallNode X="20.0" Y="50.0" />
+        <WallNode X="40.0" Y="50.0" />
+        <WallNode X="40.0" Y="40.0" />
+        <!-- More wall nodes here -->
     </Floor>
     <Floor>
-        <EntryNodes>
-            <Entry X="0.0" Y="10.0" Prev="0">
-                <Link Type="Guide" Index="0" />
-            </Entry>
-        </EntryNodes>
-        <GuideNodes>
-            <GuideNode X="100.0" Y="20.0">
-                <Link Type="Guide" Index="1" />
-            </GuideNode>
-            <GuideNode X="70.0" Y="30.0">
-                <Link Type="Guide" Index="2" />
-            </GuideNode>
-            <GuideNode X="50.0" Y="60.0">
-                <Link Type="Entry" Index="0" />
-            </GuideNode>
-            <GuideNode X="50.0" Y="43.0" />
-            <GuideNode X="45.0" Y="32.0" Name="b141" />
-        </GuideNodes>
-        <WallNodes>
-            <WallNode X="20.0" Y="40.0" />
-            <WallNode X="20.0" Y="50.0" />
-            <WallNode X="40.0" Y="50.0" />
-            <WallNode X="40.0" Y="40.0" />
-        </WallNodes>
+        <Entry X="0.0" Y="10.0" Prev="0">
+            <Link Type="Guide" Index="0" />
+        </Entry>
+        <GuideNode X="100.0" Y="20.0">
+            <Link Type="Guide" Index="1" />
+        </GuideNode>
+        <GuideNode X="70.0" Y="30.0">
+            <Link Type="Guide" Index="2" />
+        </GuideNode>
+        <GuideNode X="50.0" Y="60.0">
+            <Link Type="Entry" Index="0" />
+        </GuideNode>
+        <GuideNode X="50.0" Y="43.0" />
+        <GuideNode X="45.0" Y="32.0" Name="b241" />
+        <WallNode X="20.0" Y="40.0" />
+        <WallNode X="20.0" Y="50.0" />
+        <WallNode X="40.0" Y="50.0" />
+        <WallNode X="40.0" Y="40.0" />
     </Floor>
     <!-- More floors here -->
 </Map>
@@ -71,12 +59,6 @@ Root element that contains floor elements.
 |Name|Map's name.|
 ## Floor
 Floor element. Representing a floor, and contains node elements.
-### EntryNodes
-Contains all entry nodes and their links.
-### GuideNodes
-Contains all guide nodes and their links.
-### WallNodes
-Contains all wall nodes and their links.
 ## Node
 Base element for nodes. Contains its position and links.
 |Attribute|Description|
