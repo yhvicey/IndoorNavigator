@@ -2,17 +2,17 @@
 <Map Version="1.0" Name="物联网学院B区">
     <Floor>
         <EntryNode X="0.0" Y="10.0" Next="0">
-            <Link Type="Guide" Index="0" />
+            <Link Type="GuideNode" Index="0" />
         </EntryNode>
         <!-- More entry nodes here -->
         <GuideNode X="100.0" Y="20.0">
-            <Link Type="Guide" Index="1" />
+            <Link Type="GuideNode" Index="1" />
         </GuideNode>
         <GuideNode X="70.0" Y="30.0">
-            <Link Type="Guide" Index="2" />
+            <Link Type="GuideNode" Index="2" />
         </GuideNode>
         <GuideNode X="50.0" Y="60.0">
-            <Link Type="Entry" Index="0" />
+            <Link Type="EntryNode" Index="0" />
         </GuideNode>
         <GuideNode X="50.0" Y="43.0" />
         <GuideNode X="45.0" Y="32.0" Name="b141" />
@@ -25,16 +25,16 @@
     </Floor>
     <Floor>
         <Entry X="0.0" Y="10.0" Prev="0">
-            <Link Type="Guide" Index="0" />
+            <Link Type="GuideNode" Index="0" />
         </Entry>
         <GuideNode X="100.0" Y="20.0">
-            <Link Type="Guide" Index="1" />
+            <Link Type="GuideNode" Index="1" />
         </GuideNode>
         <GuideNode X="70.0" Y="30.0">
-            <Link Type="Guide" Index="2" />
+            <Link Type="GuideNode" Index="2" />
         </GuideNode>
         <GuideNode X="50.0" Y="60.0">
-            <Link Type="Entry" Index="0" />
+            <Link Type="EntryNode" Index="0" />
         </GuideNode>
         <GuideNode X="50.0" Y="43.0" />
         <GuideNode X="45.0" Y="32.0" Name="b241" />
