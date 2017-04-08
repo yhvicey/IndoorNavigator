@@ -5,15 +5,9 @@
             <Link Type="GuideNode" Index="0" />
         </EntryNode>
         <!-- More entry nodes here -->
-        <GuideNode X="100.0" Y="20.0">
-            <Link Type="GuideNode" Index="1" />
-        </GuideNode>
-        <GuideNode X="70.0" Y="30.0">
-            <Link Type="GuideNode" Index="2" />
-        </GuideNode>
-        <GuideNode X="50.0" Y="60.0">
-            <Link Type="EntryNode" Index="0" />
-        </GuideNode>
+        <GuideNode X="100.0" Y="20.0" />
+        <GuideNode X="70.0" Y="30.0" />
+        <GuideNode X="50.0" Y="60.0" />
         <GuideNode X="50.0" Y="43.0" />
         <GuideNode X="45.0" Y="32.0" Name="b141" />
         <!-- More guide nodes here -->
@@ -22,26 +16,27 @@
         <WallNode X="40.0" Y="50.0" />
         <WallNode X="40.0" Y="40.0" />
         <!-- More wall nodes here -->
+        <Link StartType="EntryNode" StartIndex="0" EndType="GuideNode" EndIndex="0" />
+        <Link StartType="GuideNode" StartIndex="0" EndType="GuideNode" EndIndex="1" />
+        <Link StartType="GuideNode" StartIndex="1" EndType="GuideNode" EndIndex="2" />
+        <Link StartType="GuideNode" StartIndex="2" EndType="EntryNode" EndIndex="0" />
+        <!-- More links here -->
     </Floor>
     <Floor>
-        <EntryNode X="0.0" Y="10.0" Prev="0">
-            <Link Type="GuideNode" Index="0" />
-        </EntryNode>
-        <GuideNode X="100.0" Y="20.0">
-            <Link Type="GuideNode" Index="1" />
-        </GuideNode>
-        <GuideNode X="70.0" Y="30.0">
-            <Link Type="GuideNode" Index="2" />
-        </GuideNode>
-        <GuideNode X="50.0" Y="60.0">
-            <Link Type="EntryNode" Index="0" />
-        </GuideNode>
+        <EntryNode X="0.0" Y="10.0" Prev="0" />
+        <GuideNode X="100.0" Y="20.0" />
+        <GuideNode X="70.0" Y="30.0" />
+        <GuideNode X="50.0" Y="60.0" />
         <GuideNode X="50.0" Y="43.0" />
         <GuideNode X="45.0" Y="32.0" Name="b241" />
         <WallNode X="20.0" Y="40.0" />
         <WallNode X="20.0" Y="50.0" />
         <WallNode X="40.0" Y="50.0" />
         <WallNode X="40.0" Y="40.0" />
+        <Link StartType="EntryNode" StartIndex="0" EndType="GuideNode" EndIndex="0" />
+        <Link StartType="GuideNode" StartIndex="0" EndType="GuideNode" EndIndex="1" />
+        <Link StartType="GuideNode" StartIndex="1" EndType="GuideNode" EndIndex="2" />
+        <Link StartType="GuideNode" StartIndex="2" EndType="EntryNode" EndIndex="0" />
     </Floor>
     <!-- More floors here -->
 </Map>
