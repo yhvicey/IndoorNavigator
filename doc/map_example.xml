@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Map Version="1.0" Name="物联网学院B区">
     <Floor>
-        <EntryNode X="0.0" Y="10.0" Next="0">
-            <Link Type="GuideNode" Index="0" />
-        </EntryNode>
+        <EntryNode X="0.0" Y="10.0" Next="0" />
         <!-- More entry nodes here -->
         <GuideNode X="100.0" Y="20.0" />
         <GuideNode X="70.0" Y="30.0" />
