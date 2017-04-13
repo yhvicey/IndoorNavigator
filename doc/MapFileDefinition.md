@@ -54,7 +54,7 @@ a map file is a xml file with a specified format.
 ## Map
 Root element that contains floor elements.
 |Attribute|Description|
-|-|-|
+|---|---|
 |Version|Specified map file's version.|
 |Name|Map's name.|
 ## Floor
@@ -62,26 +62,26 @@ Floor element. Representing a floor, and contains node elements.
 ## Node
 Base element for nodes. Contains its position and links.
 |Attribute|Description|
-|-|-|
+|---|---|
 |X|X position of the node in double. Start from 0.|
 |Y|Y position of the node in double. Start from 0.|
 ### EntryNode
 EntryNode element. Have Name, Prev and Next attributes.
 |Attribute|Description|
-|-|-|
+|---|---|
 |Name|Node name.|
 |Prev|Previous entry's index which is connected to this entry. Start from 0.|
 |Next|Next entry's index which is connected to this entry. Start from 0.|
 ### GuideNode
 GuideNode element. Have Name attribute.
 |Attribute|Description|
-|-|-|
+|---|---|
 |Name|Node name.|
 ### WallNode
 WallNode element. Contains its properties and links.
 ## Link
 Link element. Representing a link from its parent node to target node.
 |Attribute|Description|
-|-|-|
+|---|---|
 |Type|Type of target node. Must be "EntryNode", "GuideNode" or "WallNode".|
 |Index|Index of target node. Start from 0.|
