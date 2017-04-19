@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Map Version="1.0" Name="物联网学院B区">
+<Map Version="1.1" Name="物联网学院B区">
     <Floor>
-        <EntryNode X="0.0" Y="10.0" Next="0" />
-        <!-- More entry nodes here -->
-        <GuideNode X="100.0" Y="20.0" />
-        <GuideNode X="70.0" Y="30.0" />
-        <GuideNode X="50.0" Y="60.0" />
-        <GuideNode X="50.0" Y="43.0" />
-        <GuideNode X="45.0" Y="32.0" Name="b141" />
+        <GuideNode X="0" Y="10" Next="0" />
+        <GuideNode X="100" Y="20" />
+        <GuideNode X="70" Y="30" />
+        <GuideNode X="50" Y="60" />
+        <GuideNode X="50" Y="43" />
+        <GuideNode X="45" Y="32" Name="b141" />
         <!-- More guide nodes here -->
-        <WallNode X="20.0" Y="40.0" />
-        <WallNode X="20.0" Y="50.0" />
-        <WallNode X="40.0" Y="50.0" />
-        <WallNode X="40.0" Y="40.0" />
+        <WallNode X="20" Y="40" />
+        <WallNode X="20" Y="50" />
+        <WallNode X="40" Y="50" />
+        <WallNode X="40" Y="40" />
         <!-- More wall nodes here -->
         <Link StartType="EntryNode" StartIndex="0" EndType="GuideNode" EndIndex="0" />
         <Link StartType="GuideNode" StartIndex="0" EndType="GuideNode" EndIndex="1" />
@@ -21,16 +20,16 @@
         <!-- More links here -->
     </Floor>
     <Floor>
-        <EntryNode X="0.0" Y="10.0" Prev="0" />
-        <GuideNode X="100.0" Y="20.0" />
-        <GuideNode X="70.0" Y="30.0" />
-        <GuideNode X="50.0" Y="60.0" />
-        <GuideNode X="50.0" Y="43.0" />
-        <GuideNode X="45.0" Y="32.0" Name="b241" />
-        <WallNode X="20.0" Y="40.0" />
-        <WallNode X="20.0" Y="50.0" />
-        <WallNode X="40.0" Y="50.0" />
-        <WallNode X="40.0" Y="40.0" />
+        <GuideNode X="0" Y="10" Prev="0" />
+        <GuideNode X="100" Y="20" />
+        <GuideNode X="70" Y="30" />
+        <GuideNode X="50" Y="60" />
+        <GuideNode X="50" Y="43" />
+        <GuideNode X="45" Y="32" Name="b241" />
+        <WallNode X="20" Y="40" />
+        <WallNode X="20" Y="50" />
+        <WallNode X="40" Y="50" />
+        <WallNode X="40" Y="40" />
         <Link StartType="EntryNode" StartIndex="0" EndType="GuideNode" EndIndex="0" />
         <Link StartType="GuideNode" StartIndex="0" EndType="GuideNode" EndIndex="1" />
         <Link StartType="GuideNode" StartIndex="1" EndType="GuideNode" EndIndex="2" />
