@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Tags Version="1.0" Name="物联网学院B区">
-    <Tag Floor="0" Type="Guide" Index="0" Value="Tag 1"/>
-    <Tag Floor="0" Type="Guide" Index="1" Value="标签 2"/>
+<Tags Version="1.1">
+    <Tag Floor="0" Type="GuideNode" Index="0" Value="Tag 1"/>
+    <Tag Floor="0" Type="GuideNode" Index="1" Value="标签 2"/>
 </Tags>
