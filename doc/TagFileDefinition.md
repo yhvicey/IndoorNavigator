@@ -5,8 +5,8 @@ a tag file is a xml file with a specified format.
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <Tags Version="1.1">
-    <Tag Floor="0" Type="GuideNode" Index="0" Value="Tag 1"/>
-    <Tag Floor="0" Type="GuideNode" Index="1" Value="标签 2"/>
+    <Tag FloorIndex="0" NodeType="GuideNode" NodeIndex="0" Value="Tag 1"/>
+    <Tag FloorIndex="0" NodeType="GuideNode" NodeIndex="1" Value="标签 2"/>
 </Tags>
 ```
 # Element defines
@@ -23,7 +23,7 @@ Tag element. Representing a tag.
 
 |Attribute|Description|
 |-|-|
-|Floor|Tag's floor.|
-|Type|Tag's target node's type.|
-|Index|Tag's target node's index.|
+|FloorIndex|Tag's floor index.|
+|NodeType|Tag's target node's type.|
+|NodeIndex|Tag's target node's index.|
 |Value|Tag's value.|
