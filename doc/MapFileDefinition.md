@@ -1,9 +1,7 @@
 # File define
-
-a map file is a xml file with a specified format.
+A map file is a xml file with a specified format.
 
 # File example
-
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <Map Version="1.1" Name="物联网学院B区">
@@ -45,6 +43,7 @@ a map file is a xml file with a specified format.
     <!-- More floors here -->
 </Map>
 ```
+
 # Element defines
 
 ## Map

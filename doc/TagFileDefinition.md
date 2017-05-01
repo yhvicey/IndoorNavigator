@@ -1,5 +1,5 @@
 # File define
-a tag file is a xml file with a specified format.
+A tag file is a xml file with a specified format.
 
 # File example
 ```
@@ -9,20 +9,21 @@ a tag file is a xml file with a specified format.
     <Tag FloorIndex="0" NodeType="GuideNode" NodeIndex="1" Value="标签 2"/>
 </Tags>
 ```
+
 # Element defines
 
 ## Tags
 Root element that contains tag elements.
 
 |Attribute|Description|
-|-|-|
+|---|---|
 |Version|Specify tag file's version.|
 
 ## Tag
 Tag element. Representing a tag.
 
 |Attribute|Description|
-|-|-|
+|---|---|
 |FloorIndex|Tag's floor index.|
 |NodeType|Tag's target node's type.|
 |NodeIndex|Tag's target node's index.|

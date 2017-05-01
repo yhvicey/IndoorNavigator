@@ -14,6 +14,7 @@ A path file is a xml file with a specified format.
     <Node X="40" Y="40" />
 </Path>
 ```
+
 # Element defines
 
 ## Path
