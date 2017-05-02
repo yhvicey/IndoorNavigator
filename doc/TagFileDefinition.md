@@ -17,7 +17,7 @@ Root element that contains tag elements.
 
 |Attribute|Description|
 |---|---|
-|Version|Specify tag file's version.|
+|Version|Specified tag file's version.|
 
 ## Tag
 Tag element. Representing a tag.

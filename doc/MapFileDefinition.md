@@ -51,7 +51,7 @@ Root element that contains floor elements.
 
 |Attribute|Description|
 |---|---|
-|Version|Specify map file's version. Current version is 1.1.|
+|Version|Specified map file's version. Current version is 1.1.|
 |Name|Map's name.|
 
 ## Floor

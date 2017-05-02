@@ -1,34 +1,32 @@
 # File define
-A path file is a xml file with a specified format.
+A path file is a txt file with a specified format.
 
 # File example
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<Path Version="1.0" Speed="100">
-    <Node X="10" Y="10" />
-    <Node X="20" Y="10" />
-    <Node X="30" Y="10" />
-    <Node X="40" Y="10" />
-    <Node X="40" Y="20" />
-    <Node X="40" Y="30" />
-    <Node X="40" Y="40" />
-</Path>
+1.1
+1,10,10
+1,20,10
+1,30,10
+1,40,10
+2,10,10
+2,20,10
+2,30,10
+2,40,10
+```
+
+# Structure
+```
+<Version>
+<FloorIndex>,<X>,<Y>
+[,<FloorIndex>,<X>,<Y>]
+...
 ```
 
 # Element defines
 
-## Path
-Root element that contains path node elements.
-
-|Attribute|Description|
+|Element|Description|
 |---|---|
-|Version|Specify tag file's version.|
-|Speed|Emulating speed.|
-
-## Node
-Node element. Representing a path node.
-
-|Attribute|Description|
-|---|---|
+|Version|Specified path file's version.|
+|FloorIndex|Floor index of this node.|
 |X|X position of the node in double. Start from 0.|
 |Y|Y position of the node in double. Start from 0.|
