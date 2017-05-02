@@ -3,7 +3,6 @@ A path file is a txt file with a specified format.
 
 # File example
 ```
-1.1
 1,10,10
 1,20,10
 1,30,10
@@ -16,7 +15,6 @@ A path file is a txt file with a specified format.
 
 # Structure
 ```
-<Version>
 <FloorIndex>,<X>,<Y>
 [,<FloorIndex>,<X>,<Y>]
 ...
@@ -26,7 +24,6 @@ A path file is a txt file with a specified format.
 
 |Element|Description|
 |---|---|
-|Version|Specified path file's version.|
 |FloorIndex|Floor index of this node.|
 |X|X position of the node in double. Start from 0.|
 |Y|Y position of the node in double. Start from 0.|
