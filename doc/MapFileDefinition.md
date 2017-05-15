@@ -10,17 +10,17 @@ A map file is a xml file with a specified format.
 <?xml version="1.0" encoding="utf-8"?>
 <Map Version="1.1" Name="物联网学院B区">
     <Floor>
-        <GuideNode X="0" Y="10" Next="0" />
-        <GuideNode X="100" Y="20" />
-        <GuideNode X="70" Y="30" />
-        <GuideNode X="50" Y="60" />
-        <GuideNode X="50" Y="43" />
-        <GuideNode X="45" Y="32" Name="b141" />
+        <Node Type="GuideNode" X="0" Y="10" Next="0" />
+        <Node Type="GuideNode" X="100" Y="20" />
+        <Node Type="GuideNode" X="70" Y="30" />
+        <Node Type="GuideNode" X="50" Y="60" />
+        <Node Type="GuideNode" X="50" Y="43" />
+        <Node Type="GuideNode" X="45" Y="32" Name="b141" />
         <!-- More guide nodes here -->
-        <WallNode X="20" Y="40" />
-        <WallNode X="20" Y="50" />
-        <WallNode X="40" Y="50" />
-        <WallNode X="40" Y="40" />
+        <Node Type="WallNode" X="20" Y="40" />
+        <Node Type="WallNode" X="20" Y="50" />
+        <Node Type="WallNode" X="40" Y="50" />
+        <Node Type="WallNode" X="40" Y="40" />
         <!-- More wall nodes here -->
         <Link Type="GuideNode" StartIndex="0" EndIndex="0" />
         <Link Type="GuideNode" StartIndex="0" EndIndex="1" />
@@ -29,16 +29,16 @@ A map file is a xml file with a specified format.
         <!-- More links here -->
     </Floor>
     <Floor>
-        <GuideNode X="0" Y="10" Prev="0" />
-        <GuideNode X="100" Y="20" />
-        <GuideNode X="70" Y="30" />
-        <GuideNode X="50" Y="60" />
-        <GuideNode X="50" Y="43" />
-        <GuideNode X="45" Y="32" Name="b241" />
-        <WallNode X="20" Y="40" />
-        <WallNode X="20" Y="50" />
-        <WallNode X="40" Y="50" />
-        <WallNode X="40" Y="40" />
+        <Node Type="GuideNode" X="0" Y="10" Prev="0" />
+        <Node Type="GuideNode" X="100" Y="20" />
+        <Node Type="GuideNode" X="70" Y="30" />
+        <Node Type="GuideNode" X="50" Y="60" />
+        <Node Type="GuideNode" X="50" Y="43" />
+        <Node Type="GuideNode" X="45" Y="32" Name="b241" />
+        <Node Type="WallNode" X="20" Y="40" />
+        <Node Type="WallNode" X="20" Y="50" />
+        <Node Type="WallNode" X="40" Y="50" />
+        <Node Type="WallNode" X="40" Y="40" />
         <Link Type="GuideNode" StartIndex="0" EndIndex="0" />
         <Link Type="GuideNode" StartIndex="0" EndIndex="1" />
         <Link Type="GuideNode" StartIndex="1" EndIndex="2" />
@@ -65,26 +65,16 @@ Floor element. Representing a floor, and contains node elements.
 
 ### Node
 
-Base element for nodes. Contains its position and links.
+Node element. Reresenting a guidenode or wallnode.
 
 |Attribute|Description|
 |---|---|
 |X|X position of the node in double. Start from 0.|
 |Y|Y position of the node in double. Start from 0.|
-
-#### GuideNode
-
-GuideNode element. Have optional Name attribute. if it is an entry, there will be optional Prev and Next attribute.
-
-|Attribute|Description|
-|---|---|
+|Type|Node type.|
 |Name|Node name.|
 |Prev|Previous entry's index which is connected to this entry. Start from 0.|
 |Next|Next entry's index which is connected to this entry. Start from 0.|
-
-#### WallNode
-
-WallNode element. Contains its properties and links.
 
 ### Link
 
