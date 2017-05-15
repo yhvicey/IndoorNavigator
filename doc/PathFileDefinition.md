@@ -1,8 +1,12 @@
-# File define
+# Path file definition
+
+## File define
+
 A path file is a txt file with a specified format.
 
-# File example
-```
+## File example
+
+```text
 1,10,10
 1,20,10
 1,30,10
@@ -13,14 +17,15 @@ A path file is a txt file with a specified format.
 2,40,10
 ```
 
-# Structure
-```
+## Structure
+
+```text
 <FloorIndex>,<X>,<Y>
-[,<FloorIndex>,<X>,<Y>]
+[<FloorIndex>,<X>,<Y>]
 ...
 ```
 
-# Element defines
+## Element defines
 
 |Element|Description|
 |---|---|

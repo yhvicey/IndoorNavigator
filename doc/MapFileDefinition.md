@@ -1,8 +1,12 @@
-# File define
+# Map file definition
+
+## File define
+
 A map file is a xml file with a specified format.
 
-# File example
-```
+## File example
+
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <Map Version="1.1" Name="物联网学院B区">
     <Floor>
@@ -18,10 +22,10 @@ A map file is a xml file with a specified format.
         <WallNode X="40" Y="50" />
         <WallNode X="40" Y="40" />
         <!-- More wall nodes here -->
-        <Link StartType="EntryNode" StartIndex="0" EndType="GuideNode" EndIndex="0" />
-        <Link StartType="GuideNode" StartIndex="0" EndType="GuideNode" EndIndex="1" />
-        <Link StartType="GuideNode" StartIndex="1" EndType="GuideNode" EndIndex="2" />
-        <Link StartType="GuideNode" StartIndex="2" EndType="EntryNode" EndIndex="0" />
+        <Link Type="GuideNode" StartIndex="0" EndIndex="0" />
+        <Link Type="GuideNode" StartIndex="0" EndIndex="1" />
+        <Link Type="GuideNode" StartIndex="1" EndIndex="2" />
+        <Link Type="GuideNode" StartIndex="2" EndIndex="0" />
         <!-- More links here -->
     </Floor>
     <Floor>
@@ -35,18 +39,19 @@ A map file is a xml file with a specified format.
         <WallNode X="20" Y="50" />
         <WallNode X="40" Y="50" />
         <WallNode X="40" Y="40" />
-        <Link StartType="EntryNode" StartIndex="0" EndType="GuideNode" EndIndex="0" />
-        <Link StartType="GuideNode" StartIndex="0" EndType="GuideNode" EndIndex="1" />
-        <Link StartType="GuideNode" StartIndex="1" EndType="GuideNode" EndIndex="2" />
-        <Link StartType="GuideNode" StartIndex="2" EndType="EntryNode" EndIndex="0" />
+        <Link Type="GuideNode" StartIndex="0" EndIndex="0" />
+        <Link Type="GuideNode" StartIndex="0" EndIndex="1" />
+        <Link Type="GuideNode" StartIndex="1" EndIndex="2" />
+        <Link Type="GuideNode" StartIndex="2" EndIndex="0" />
     </Floor>
     <!-- More floors here -->
 </Map>
 ```
 
-# Element defines
+## Element defines
 
-## Map
+### Map
+
 Root element that contains floor elements.
 
 |Attribute|Description|
@@ -54,10 +59,12 @@ Root element that contains floor elements.
 |Version|Specified map file's version. Current version is 1.1.|
 |Name|Map's name.|
 
-## Floor
+### Floor
+
 Floor element. Representing a floor, and contains node elements.
 
-## Node
+### Node
+
 Base element for nodes. Contains its position and links.
 
 |Attribute|Description|
@@ -65,7 +72,8 @@ Base element for nodes. Contains its position and links.
 |X|X position of the node in double. Start from 0.|
 |Y|Y position of the node in double. Start from 0.|
 
-### GuideNode
+#### GuideNode
+
 GuideNode element. Have optional Name attribute. if it is an entry, there will be optional Prev and Next attribute.
 
 |Attribute|Description|
@@ -74,13 +82,16 @@ GuideNode element. Have optional Name attribute. if it is an entry, there will b
 |Prev|Previous entry's index which is connected to this entry. Start from 0.|
 |Next|Next entry's index which is connected to this entry. Start from 0.|
 
-### WallNode
+#### WallNode
+
 WallNode element. Contains its properties and links.
 
-## Link
+### Link
+
 Link element. Representing a link from its parent node to target node.
 
 |Attribute|Description|
 |---|---|
 |Type|Type of target node. Must be "EntryNode", "GuideNode" or "WallNode".|
-|Index|Index of target node. Start from 0.|
+|StartIndex|Index of start node. Start from 0.|
+|EndIndex|Index of end node. Start from 0.|
